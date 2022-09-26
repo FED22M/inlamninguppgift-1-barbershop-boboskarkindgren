@@ -1,0 +1,72 @@
+@media screen and (max-width: 616px) {
+
+    header {
+        position: sticky;
+        margin: 0;
+        top: 0%;
+        
+    }
+   
+    nav {
+        background-color: black;
+        text-transform: uppercase;
+        color: white;
+        display: flex;
+        justify-content:space-between;
+        position: sticky;
+    }
+        
+    h1 {
+        margin-left: 5%;
+    }
+
+    .desktop-content {
+        display: none;
+    }
+
+    .btn-menu {
+        background-color: black;
+        color: white;
+        border: none;
+        cursor: pointer;
+        margin-right: 5%;
+        text-transform: uppercase;
+    }
+
+   
+
+    /* för att skriva över bild */
+
+    
+
+}
+    /* header nav a {
+        display: none;
+    } */
+
+    
+
+    /* .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display:none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+     */
+
+
+@media screen and (min-width: 617px) {
+    
+    nav {background-color: green;}
+
+    /* header nav button {
+        display: none;
+    } */
+}
