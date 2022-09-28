@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    font-family: Barlow Semi Condensed;
+    color:white;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin: 0px;
+    color: white;
+    
+}
+
+h2 {
+    color: orange;
+ 
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+header {
+    max-width: 1200px;
+    /* margin: 40px auto; */
+    /* border-bottom: 1px solid whitesmoke; */
+    /* margin: 0px; */
+    height: 800px;
+    background: url(./img/background.jpg) no-repeat center;
+    background-size: cover;
+    
+
+    
+}
+
+p{
+    color: white;
+    font-family: poppins;
+    text-transform: uppercase;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+ul {
+    display: none;
+}  
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: rgba(2, 2, 2, 0.5);
+    padding: 0px 0px 0px 0px;
+    position: sticky;
+    top: 2px;
+    padding: 5px;
+    
+    
+}
+
+nav div {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    
+    
+}
+
+nav button {
+    text-align: right;
+    background: none;
+    border: 0;
+    color: white;
+    font-family: poppins;
+    text-transform: uppercase;
+}
+
+div.header-content{
+    position: absolute;
+    top: 300px;
+    height: auto;
+    left: 10px;
+    right: 50px;
+
+}
+    
+
+
+
+.article-1, .article-3 {
+    background: rgb(204, 169, 105);
+}
+
+.article-2, .article-4 {
+    background: rgb(231, 183, 94);
+}
+
+
+/* img{
+    width: 100px; 
+    height: 100px;
+} */
+
+ul, li{
+    padding: 0;
+    list-style-type: none;
+}
+
+body{
+    /* background-color:rgb(160, 220, 219); */
+    margin: 0px;
+    
+}
+
+/* .background-image  */
+    /* background-image: url(/Applications/MAMP/htdocs/uppgifter/uppgift1_barber/Barber/src/img/background.jpg); */
+    /* background: url(./img/background.jpg) no-repeat center;
+    background-size: cover; */
+
+    /* background-size: 100% 100%;
+    background-repeat: no-repeat; */
+    
+
+
+
+
+/* mobile main grid */
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 1fr;
+    /* gap: 60px; */
+    max-width: 1200px;
+    /* margin: 20px auto; */
+ 
+}
+
+/* för att få bilderna i mitten */
+article {
+    display: grid;
+    justify-items: center;
+    
+    
+}
+
+/* article.featured {
+    grid-row: span 1;
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 60px;
+    align-items: center;
+    justify-items:center;
+    border-bottom: 1px solid whitesmoke; 
+    padding-bottom: 40px;
+} */
+
+
+
+/* desktop */
+
+ /* .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 20px auto;  
+ }
+
+ article.featured {
+    grid-column: span 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    border-bottom: 1px solid whitesmoke; 
+    padding-bottom: 40px;
+ } */
+
+ article img, article.featured img {
+     width: 20%;
+     border: 4px solid whitesmoke;
+     border-radius: 8px;
+     
+ }  
+
+ article p, article h2, article h3 {
+    margin: 20px 10px;
+ }
+
+ /* @media screen and (max-width: 600px) {
+
+    article {
+        grid-column: span 4;
+        display: grid;
+        grid-template-columns: 1f 1fr;
+        gap: 60px;
+        align-items: center;
+    }
+ } */
+ 
+
+ /* imorgon: testa nu att lägga bakgrundsbilden istället för färg och se vad som händer */
