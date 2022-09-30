@@ -2,7 +2,6 @@
     box-sizing: border-box;
 }
 
-
 h1, h2, h3 {
     font-family: Barlow Semi Condensed;
     /* color:white; */
@@ -50,20 +49,32 @@ h3 {
     padding-left: 10px;
 }
 
+
 header {
-    max-width: 1200px;
+    /* max-width: 1200px; */
     /* margin: 40px auto; */
     /* border-bottom: 1px solid whitesmoke; */
     /* margin: 0px; */
     height: 800px;
     background: linear-gradient(rgba(0,0,0,0.627),rgba(0,0,0,0.8)), url(./img/background.jpg) no-repeat center;
     background-size: cover;
+    position: relative;
 }
 
 p{
     color: white;
     font-family: poppins;
     line-height: 1.8;
+    /* padding-right: 20px; */
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+header p {
+
+    padding-right: 0px;
 }
 
 .box-wrapper p {
@@ -136,11 +147,12 @@ nav button {
 .header-content{
     position: absolute;
     left: 10px;
-    top: 300px;
+    top: 200px;
     /* top: 40%;
     height: auto;
     left: 10px;
     right: 50px; */
+    padding-right: 50px;
     
 }
 
@@ -186,7 +198,7 @@ body{
     display: grid;
     grid-template-rows: 1fr;
     /* gap: 60px; */
-    max-width: 1200px;
+    /* max-width: 1200px; */
     text-align: center;
     /* margin: 20px auto; */
  
@@ -200,8 +212,13 @@ body{
     
 } */
 
+.grid-container article {
+    padding-bottom: 70px
+}
+
  .grid-container h2 {
     font-size: 1.2em; 
+    
 }
 
 
@@ -255,6 +272,8 @@ body{
     width: 150px;
     height: 150px;
     max-width: 100%;
+    margin-top: -70px;
+    position: relative;
      
  }  
 
@@ -265,9 +284,6 @@ body{
     padding-right: 10px;
     margin-bottom: 40px
  }
-
- 
-
 
  article p, article h2, article h3 {
     margin: 20px 10px;
@@ -308,4 +324,35 @@ i {
     margin: 16px;
     color: white;
     margin-left: 17px;
+}
+
+@media screen and (min-width: 700px) {
+    /* header desktop */
+    .header-content {
+    left: 50%;
+    width: 50%;
+
+     }
+
+     .header-right {
+
+    padding-left: 60px;
+    padding-right: 30px;
+    border-left: 1px solid rgb(191 146 91);
+     }
+
+    /* header p {
+        padding-bottom: 10px;
+    } */
+
+
+    /* services desktop */
+    .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* max-width: 1200px */
+    }
+    
+
+
 }
