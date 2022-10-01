@@ -356,8 +356,9 @@ body{
 /* recensioner */
 
 .review-wrapper{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     background: rgb(235 232 222);
+    padding-bottom: 50px;
 }
 
 .review-container{
@@ -371,7 +372,7 @@ body{
 }
 
 .review-container .box {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 100%;
     height: 100%;
     background: white;
@@ -446,6 +447,11 @@ blockquote {
     right: 18px;
 }
 
+.card-text span{
+    color: rgb(191 146 91);
+    font-size: 1rem;
+}
+
 @media screen and (min-width: 700px) {
     /* header desktop */
     .header-content {
@@ -506,8 +512,8 @@ blockquote {
         flex-direction: row;
     }
 
-    .review-wrapper{
+    /* .review-wrapper{
         padding-bottom: 50px;
-    }
+    } */
 }
         
