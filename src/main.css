@@ -346,7 +346,7 @@ body{
     
 }
 
-i {
+.box-wrapper i {
     margin: 16px;
     color: white;
     margin-left: 17px;
@@ -373,10 +373,10 @@ i {
 .review-container .box {
     border: 1px solid black;
     width: 100%;
-    height: 250px;
+    height: 100%;
     background: white;
     justify-content: center;
-    gap: 30px;
+    gap: 0px;
     border-radius: 5px;
 }
 
@@ -406,6 +406,46 @@ i {
     display: flex;
     gap: 20px;
 }
+
+blockquote {
+    font-family: poppins;
+    color: gray;
+    line-height: 1.8;
+}
+
+.card-text {
+    line-height: 0.8;
+}
+
+.card-text p {
+    color: rgb(191 146 91);
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-family: poppins;
+}
+
+.card-text h4{
+    font-family: poppins;
+    font-size: 1.2rem;
+}
+
+.quotation{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(191 146 91);
+    border-radius: 50%;
+    padding: 25px;
+    margin-top: -45px;
+    margin-left: 20px;
+    
+}
+
+.quotation i {
+    color:white;
+    top: 17px;
+    right: 18px;
+}
+
 @media screen and (min-width: 700px) {
     /* header desktop */
     .header-content {
@@ -460,5 +500,14 @@ i {
     padding-right: 20px;
     }
 
+/* recensioner */
+
+    .review-container{
+        flex-direction: row;
     }
+
+    .review-wrapper{
+        padding-bottom: 50px;
+    }
+}
         
