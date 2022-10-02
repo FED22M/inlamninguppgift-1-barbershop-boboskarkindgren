@@ -490,6 +490,7 @@ button.menu-open + .menu {
 
     .flex-wrapper {
         display: flex;
+        max-height: -webkit-fill-available;
         }
     
     .about-img img {
@@ -577,6 +578,33 @@ button.menu-open + .menu {
 
     nav h1{
         text-align: center;
+    }
+
+    button + .menu {
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+
+    
+    }
+
+    .menu{
+        display: flex;
+    }
+     
+      button.menu-open + .menu {
+        display:flex;
+        opacity: 1;
+        visibility:visible;
+        text-align: right;
+        margin-top: 0px;
+        margin-right: 7px;
+    }
+
+    
+    
+    div #menu-button{
+        display: none;
     }
 
     
