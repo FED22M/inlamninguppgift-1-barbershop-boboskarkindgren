@@ -75,6 +75,15 @@ p{
     cursor: pointer;
 }
 
+.pointer:hover {
+    color: orange;
+}
+
+a:hover {
+    color: orange;
+}
+
+
 header p {
 
     padding-right: 0px;
@@ -104,9 +113,13 @@ a {
 
 header ul {
     display: none;
+    gap: 30px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-size: 0.6rem;
 }  
 
-.nav-wrapper {
+nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background: rgba(2, 2, 2, 0.5);
@@ -129,7 +142,7 @@ h3 span {
     -webkit-text-stroke-color: white;
 }
 
-nav .nav-wrapper {
+.nav-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: right;
@@ -654,6 +667,20 @@ footer ul {
     }
     .nowrap{
         white-space: nowrap;
+    }
+
+    /* navigation */
+
+    .nav-wrapper button{
+        display: none;
+    }
+
+    header ul{
+        display: flex;
+    }
+
+    nav h1{
+        text-align: center;
     }
 
 
