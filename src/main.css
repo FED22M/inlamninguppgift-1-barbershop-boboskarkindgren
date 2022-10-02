@@ -101,7 +101,7 @@ a {
     text-decoration: none; 
 }
 
-ul {
+header ul {
     display: none;
 }  
 
@@ -181,7 +181,7 @@ nav button {
     height: 100px;
 } */
 
-ul, li{
+header ul, header li{
     padding: 0;
     list-style-type: none;
 }
@@ -452,6 +452,98 @@ blockquote {
     font-size: 1rem;
 }
 
+/* footer */
+
+.grid-footer{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    line-height: 2;
+}
+
+footer {
+    background: black;
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+
+/* .grid-footer a{
+    color: black;
+} */
+
+footer li {
+    color: whitesmoke;
+    list-style-type: none;
+}
+
+footer li::before{
+    content:">";
+    margin-left: 5px;
+    margin-right: 10px;
+    color: whitesoke;
+}
+
+.contact-icon li::before {
+    content:""fa-solid fa-book-open"";
+    margin-left: 5px;
+    margin-right: 10px;
+    color: rgb(191 146 91);
+}
+
+
+/* footer .contact-icon-1::before{
+    content:"fa-solid fa-book-open";
+} */
+
+footer a {
+    color: lightgray;
+    font-family: poppins;
+    font-size: 0.8rem;
+}
+
+footer h2 {
+color: white;
+font-size: 1.4rem;
+margin-left: 15px;
+}
+
+footer ul {
+    padding-left:10px;
+}
+
+/* icons social media */
+
+.social-media {
+    display: flex;
+    gap: 15px;
+    margin-left: 10px;
+    padding-top: 10px;
+}
+
+.social-media i {
+    margin-left: 10px;
+    margin-top: 10px;
+    color: white;
+}
+
+.twitter, .facebook, .instagram {
+    height: 35px;
+    width: 35px;
+    background: rgb(191 146 91);
+    border-radius: 50%;
+}
+
+.wrapper-social{
+    margin-bottom: 40px;
+}
+
+.icon-text {
+    display: none;
+}
+
+
+
+
 @media screen and (min-width: 700px) {
     /* header desktop */
     .header-content {
@@ -515,5 +607,28 @@ blockquote {
     /* .review-wrapper{
         padding-bottom: 50px;
     } */
+
+/* Footer */
+
+    .grid-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    
+    }
+
+    .wrapper-social{
+    display: flex;
+    flex-direction: column-reverse;
+    }
+
+    .icon-text {
+    display: flex;
+    flex-direction: column;
+    }
+
+
 }
+
+
         
