@@ -18,20 +18,20 @@
             <nav>
                 <h1 class="pointer">Barbershop</h1>
                 <div class="nav-wrapper">
-                    <button class="btn-menu pointer">Menu</button>
+                    <button id="menu-button" class="btn-menu pointer">Menu</button>
                   
-                <ul>
+                <ul class="menu">
                                     
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Gallety</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Gallety</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
 
                 </ul>
-                   
+                  
                 </div>
             </nav>
         
@@ -50,7 +50,7 @@
         
         
         </header>
-<!-- min ursprungliga class grid container låg i main här. -->
+
         
         <main>
 
@@ -138,51 +138,8 @@
             </div>
 
                      
-            <!-- <div class="about-container">
-                
-                <img src="img/about-us.jpg" alt="Här ska vara en bild">
-                
-                
-                
-                <h2>About Barber</h2>
-
-                <h3>A smooth barber experience in your town</h3>
-
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and consonantia,
-                   there live the blind texts. Separated they live in Bookmarksgrove right at the coast 
-                   of the semantics, a large language ocean. A small river named Duden flows by their 
-                   place and supplies it with the necessary regelialia.
-                </p>
-
-                
-            </div>  
-
-            <div class="box-wrapper">
-                <div class="col-1">
-                    <div class="round-black">
-                        <i class="fa-regular fa-calendar-days"></i>
-                    </div>
-                </div>
-                <div class=col-2>
-                    <h2>20</h2>
-                    <p>year of experienced</p>
-                </div>
-            </div> -->
-        
-                        <!-- bild på almanacka -->
-                <!-- <button class="about-btn">
-                <div class="button wrapper">
-                    <div class="btn-left">
-                        icon
-                    </div>
-                    <div class="btn-right">
-                        <h2>20</h2>
-                        <p>year of experienced</p>
-                    </div>
-                </div>    
-                </button>
-            </div> -->
-        <div class="review-wrapper">
+            
+            <div class="review-wrapper">
                 <h2>Testimonial</h2>
                 
                 <h3>People say about our barber</h3>
@@ -272,46 +229,7 @@
                     </div>
                 </div>
         
-                <!-- <div class="box">
-                    <div>
-                        <blockquote>Far far away, behind the word mountains, far from the countries Vokalia and consonantia,
-                            there live the blind texts.
-                        </blockquote>
-                    </div>
-                    <div class="box-2">
-                        <div>
-                            <img src="img/review-2.jpg" alt="">
-                        </div>
-                        
-                        <div class="card-text">
-                            <span>Stjärnor</span>
-                            <h4>Alice Cooper</h4>
-                            <p>Customer</p>
-                        </div>
-                    </div>
                 
-                </div> -->
-<!--         
-                <div class="box">
-                    <div>
-                        <blockquote>Far far away, behind the word mountains, far from the countries Vokalia and consonantia,
-                            there live the blind texts.
-                        </blockquote>
-                    </div>
-                    <div class="box-2">
-                        <div>
-                            <img src="img/review-3.jpg" alt="">
-                        </div>
-
-                        <div class="card-text">
-                            <span>Stjärnor</span>
-                            <h4>Joyce Hart</h4>
-                            <p>Customer</p>
-                        </div>
-                    </div>
-
-                </div> -->
-            
         </main>
 
         <footer>
@@ -362,9 +280,9 @@
         
                 <div>
                     <h2>Have a questions?</h2>
-                    <!-- kan vara img med favicon som länkar till adress, tel och mail. -->
+                    
                     <ul class="contact-icon">
-                        <li class="fa-solid fa-book-open"><a href="#">203 Fake St. Mountain View, San Francisco, California, USA</a></li>
+                        <li class="fa-solid fa-book-open"><a href="#">203 Fake St. Mountain View, San Francisco, California, USA</a></li><br>
                         <li class="fa-solid fa-phone"><a href="#">+2 392 3929 210</a></li><br>
                         <li class="fa-sharp fa-solid fa-paper-plane"><a href="#">info@yourdomain.com</a></li>
                     </ul>
@@ -376,4 +294,12 @@
         
         
 </body>
+
+<script>
+    const menuBtn = document.querySelector('#menu-button');
+    menuBtn.addEventListener('click', () => {
+        menuBtn.classList.toggle('menu-open');
+    });
+    </script>
+
 </html>
