@@ -48,6 +48,7 @@ h3 {
     font-size: 1.7rem;
     margin-bottom: 10px;
     padding-left: 10px;
+    color: rgb(20 27 37);
 }
 
 
@@ -105,7 +106,7 @@ header ul {
     display: none;
 }  
 
-nav {
+.nav-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background: rgba(2, 2, 2, 0.5);
@@ -128,13 +129,13 @@ h3 span {
     -webkit-text-stroke-color: white;
 }
 
-nav div {
+nav .nav-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: right;
 }
 
-nav button {
+.nav-wrapper button {
     text-align: right;
     background: none;
     border: 0;
@@ -341,7 +342,7 @@ body{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: black;
+    background: rgb(20 27 37);
     margin-left: 22px;
     
 }
@@ -396,6 +397,7 @@ body{
 .review-wrapper h3 {
     text-align: center;
     margin-top: 15px;
+    color: rgb(20 27 37);
 }
 
 .box {
@@ -428,6 +430,7 @@ blockquote {
 .card-text h4{
     font-family: poppins;
     font-size: 1.2rem;
+    color: rgb(20 27 37);
 }
 
 .quotation{
@@ -462,7 +465,7 @@ blockquote {
 }
 
 footer {
-    background: black;
+    background: rgb(9 6 1);
     padding-bottom: 50px;
     padding-top: 20px;
 }
@@ -625,6 +628,32 @@ footer ul {
     .icon-text {
     display: flex;
     flex-direction: column;
+    }
+
+    footer {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 20px;
+    padding-top: 50px;
+    }
+
+    footer h2{
+        line-height: normal;
+    }
+
+    .footer-h2{
+        margin: 0;
+    }
+
+    footer p {
+        color: lightgray;
+    }
+
+    .social-media {
+        margin: 0;
+    }
+    .nowrap{
+        white-space: nowrap;
     }
 
 
